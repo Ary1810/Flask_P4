@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../static/CSS/Receta.css">
+    <link rel="stylesheet" href="../../static/CSS/PieDePagina.css">
+    <link rel="stylesheet" href="../../static/CSS/Encabezado.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Slab:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <title>Vista de Receta</title>
+</head>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<body>
+
+    <!-- Header -->
+    <header class="header position-relative w-100 overflow-hidden">
+        <div class="banner position-relative w-100 h-100">
+            <!-- Título -->
+            <h1
+                class="title position-absolute top-0 start-50 translate-middle-x fs-1 fw-bold font-lobster text-center text-brown bg-white bg-opacity-30 p-2 rounded d-flex align-items-center gap-2">
+                Recetitas <span>Blog</span>
+            </h1>
+            <!-- Logo -->
+            <img src="../../static/img/logo.png" alt="Logo Recetitas" class="logo position-absolute top-0 end-0 m-2">
+        </div>
+    </header>
+
+    <!-- Barra de navegación -->
+    <nav class="nav-bar navbar navbar-expand-lg navbar-light bg-brown py-3">
+        <div class="container-fluid">
+            <!-- Enlaces de navegación -->
+            <div class="navbar-nav me-auto mb-2 mb-lg-0">
+                <a class="nav-link text-dark fs-5 fw-bold me-4" href="index.html">Inicio</a>
+                <!-- Menú desplegable "Mi Perfil" -->
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-dark fs-5 fw-bold me-4" href="#" id="navbarDropdown"
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Mi Perfil
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="perfil.html">Mi Perfil</a></li>
+                        <li><a class="dropdown-item" href="Favoritos.html">Favoritos</a></li>
+                        <li><a class="dropdown-item" href="Historial.html">Historial</a></li>
+                    </ul>
+                </div>
+                <a class="nav-link text-dark fs-5 fw-bold me-4" href="Subir.html">Subir Receta</a>
+                <a class="nav-link text-dark fs-5 fw-bold me-4" href="tienda.html">Tienda Oficial</a>
+            </div>
+            <!-- Caja de búsqueda -->
+            <form class="d-flex search-box bg-white bg-opacity-90 p-2 rounded">
+                <input class="search-input form-control border-0 bg-transparent font-lobster fs-6" type="text"
+                    placeholder="Hey, ¿Listo para cocinar?" aria-label="Search">
+                <button class="search-btn btn btn-link text-dark fs-5 p-0" type="submit"> <a
+                        href="Resultados.html">🔍</a></button>
+            </form>
+        </div>
+    </nav>
+
+
+    <div class="recipe-container">
+
+        <!-- Sección izquierda: Imagen y Valoración -->
+        <div class="recipe-left">
+            <div class="rating">
+                <h3>Valoracion de 5 estrellas</h3>
+                <!-- Aquí se puede agregar una barra de estrellas o un sistema de puntuación -->
+            </div>
+            <div class="recipe-image">
+                <img src="../../static/img/ramen.jpg" alt="Imagen de la receta">
+            </div>
+
+            <!-- Tips -->
+            <hr class="separator">
+
+            <div class="tips">
+                <h3 class="titulos">Tips</h3>
+                <p><strong>Caldo más espeso:</strong> Si prefieres un caldo más espeso, puedes agregar un poco de
+                    crema
+                    de sésamo (tahini) o más pasta de miso.</p>
+                <p><strong>Marinado para la carne:</strong> Para un sabor más intenso, marinar la carne de cerdo en
+                    salsa de soja, mirin, ajo y jengibre antes de cocinarla le dará un toque extra de sabor.</p>
+                <p><strong>A baja temperatura:</strong> Si tienes un termómetro, los huevos cocidos a baja
+                    temperatura
+                    (a unos 63°C) tendrán una textura más cremosa y suave.</p>
+                <p><strong>Fideos frescos:</strong> Los fideos frescos dan un sabor más auténtico, pero si usas
+                    secos,
+                    asegúrate de no cocinarlos demasiado.</p>
+            </div>
+            <hr class="separator">
+            <!-- Imágenes adicionales -->
+            <div class="additional-images">
+                <h3 class="titulos">Imágenes de Apoyo</h3>
+                <img src="../../static/img/ingre1.jpg" alt="Imagen adicional 1">
+                <img src="../../static/img/ingre2.jpg" alt="Imagen adicional 2">
+            </div>
+
+
+
+        </div>
+
+        <hr class="separator">
+
+        <!-- Sección derecha: Información general de la receta -->
+        <div class="recipe-right">
+            <div class="recipe-info">
+                <h2 class="titulo">Ramen Clasico</h2>
+                <p>Autor: <strong>La Capital</strong></p>
+                <p>Personas: <strong>4 personas</strong></p>
+                <p>Tiempo: <strong>40 minutos</strong></p>
+                <p>Nivel: <strong>Fácil</strong></p>
+            </div>
+
+            <hr class="separator">
+            <!-- Ingredientes -->
+            <div class="ingredients">
+                <h3 class="titulos">Ingredientes</h3>
+                <ul>
+                    <li>1 litro de caldo de pollo (puedes usar caldo de cerdo o vegetal si prefieres)</li>
+                    <li>2 cucharadas de pasta de miso (opcional, pero le da un sabor profundo)</li>
+                    <li>2 cucharadas de salsa de soja</li>
+                    <li>1 cucharada de mirin (opcional, pero le da un toque dulce)</li>
+                    <li>1 trozo de alga kombu (opcional, para darle un sabor umami)</li>
+                    <li>1 diente de ajo machacado</li>
+                    <li>1 trozo pequeño de jengibre fresco (al gusto)</li>
+                    <h5>Fideos:</h5>
+                    <li>200g de fideos de ramen (pueden ser frescos o secos)</li>
+                    <h5>Toppings:</h5>
+                    <li>2 huevos cocidos a baja temperatura (o cocidos por 6-7 minutos)</li>
+                    <li>100g de cerdo (lomo o panceta) en rodajas finas, marinadas o cocinadas</li>
+                    <li>Cebollín picado</li>
+                    <li>Algas nori (opcional)</li>
+                    <li>Chile en rodajas o pasta de chile (opcional para un toque picante)</li>
+                </ul>
+            </div>
+
+
+            <hr class="separator">
+            <!-- Preparación -->
+            <div class="preparation">
+                <h3 class="titulos">Preparación</h3>
+                <p>Prepara el caldo:
+
+                    En una olla grande, coloca el caldo de pollo, el ajo machacado, el jengibre, el kombu y la pasta
+                    de
+                    miso (si la estás usando).
+                    Lleva a fuego medio y deja que hierva lentamente. Una vez que haya comenzado a hervir, reduce el
+                    fuego y deja cocinar durante 15-20 minutos para que los sabores se mezclen bien.
+                    Añade la salsa de soja y el mirin al gusto. Prueba el caldo y ajusta los ingredientes según lo
+                    necesites. Si te gusta más salado, puedes añadir más salsa de soja.
+                    Cocina los fideos:</p>
+
+                <p>Mientras el caldo se cocina, hierve agua en otra olla. Cocina los fideos de ramen según las
+                    instrucciones del paquete (normalmente 3-5 minutos).
+                    Una vez cocidos, escurre bien los fideos y enjuágalos ligeramente con agua fría para detener la
+                    cocción.</p>
+
+                <p>Prepara los toppings:
+
+                    Cocina los huevos en agua hirviendo durante 6-7 minutos para que las yemas queden ligeramente
+                    cremosas. Después, pélalos y córtalos por la mitad.
+                    Si no tienes la carne marinada, puedes saltear las rodajas de cerdo en una sartén hasta que
+                    estén
+                    doradas.
+                    Corta el cebollín y prepara los brotes de bambú.</p>
+                Montaje del ramen:
+
+                Coloca los fideos cocidos en un tazón grande.
+                Vierte el caldo caliente sobre los fideos.
+                Coloca los huevos, la carne de cerdo, el cebollín, los brotes de bambú y las algas nori por encima.
+                Añade un chorrito de aceite de sésamo y espolvorea un poco de sésamo tostado.
+                Si te gusta el picante, añade unas rodajas de chile o pasta de chile.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+<footer>
+    <div class="pdpIzq">
+        <p>¿Quienes somos?</p>
+        <p>Somos un blog público de recetas</p>
+        <p>Nuestro proposito es ayudar a aprender a cocinar a los usuarios</p>
+    </div>
+
+    <div class="pdpcontactanos">
+        <p>Siguenos en redes sociales</p>
+        <div class="pdpcontenedorimagenes">
+            <div class="pdpImg">
+                <img src="../../static/img/facebook-new.png" alt="Facebook">
+            </div>
+            <div class="pdpImg">
+                <img src="../../static/img/Twitter.png" alt="Twitter">
+            </div>
+            <div class="pdpImg">
+                <img src="../../static/img/Instagram.jpg" alt="Twitter">
+            </div>
+        </div>
+    </div>
+
+    <div class="pdpderecha">
+        <p>Encuentranos en:</p>
+        <p>Rio Pantitlan 4632, Colonia Americas 25843, Méxicali, Baja California, México.</p>
+        <p>Contacto: +52 686 323 7433</p>
+        <p><a class="HipertextoFooter" href="Formulario.html">Manda un mensaje a los desarrolladores</a></p>
+    </div>
+</footer>
+
+</html>

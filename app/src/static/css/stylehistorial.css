@@ -1,0 +1,200 @@
+/* historial */
+h1{
+    text-align: center
+}
+.historialCuerpo{
+background: #F2E0B6;
+padding: 20px; 
+    margin-top: 0; 
+}
+/* Botón de borrar */
+.boton-borrar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 0, 0, 0.7); 
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    opacity: 0;
+}
+
+.boton-borrar:hover {
+    background-color: rgba(255, 0, 0, 1); 
+}
+
+
+/* Estilos para la lista horizontal */
+.lista-horizontal {
+    display: flex; 
+    justify-content: space-around; 
+    margin-top: 20px; 
+    padding: 10px;
+}
+
+.opcion {
+    padding: 20px; /* Espacio interno */
+    font-size: 1.2em; /* Tamaño de la fuente */
+    font-weight: bold; /* Texto en negrita */
+    color: #333; /* Color del texto */
+    background-color: #BA7086;
+    /* Fondo gris claro */
+    border-radius: 15px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    text-align: center; /* Centra el texto */
+    width: 150px; /* Ancho fijo para cada opción */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+}
+
+.opcion:hover {
+    background-color: #e0e0e0; /* Cambia el fondo al pasar el mouse */
+    transform: translateY(-5px); /* Efecto de levantar al pasar el mouse */
+}
+
+/* Galerías */
+.galeria {
+    margin-top: 40px;
+    background-color: #5E3119;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.galeria h2 {
+    font-size: 1.8em;
+    color: black;
+    margin-bottom: 20px;
+    text-align: center; /* Fecha centrada */
+    border-bottom: 2px solid #d64911;
+    padding-bottom: 10px;
+}
+
+.contenedor-imagenes {
+    display: flex;
+    justify-content: space-between; /* Distribuye las imágenes horizontalmente */
+    gap: 20px; /* Espacio entre las imágenes */
+}
+
+.imagen {
+    background-color: #7e9e47;
+    position: relative;
+    /* Fondo gris claro */
+    border-radius: 15px; /* Bordes redondeados */
+    overflow: hidden; /* Asegura que las imágenes no sobresalgan */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease; /* Efecto de levantar al pasar el mouse */
+    width: 30%; /* Ancho de cada imagen */
+}
+
+.imagen:hover {
+    transform: translateY(-5px); /* Efecto de levantar al pasar el mouse */
+}
+.imagen:hover .boton-borrar {
+    opacity: 1; /* Visible al pasar el mouse */
+}
+
+.imagen img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: 200px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Ajusta la imagen sin distorsionarla */
+}
+
+.descripcion {
+    padding: 15px;
+    text-align: center;
+}
+
+.nombre-receta {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.creador {
+    font-size: 0.9em;
+    color: #777;
+}
+
+.separador {
+    width: 90%;
+    max-width: 900px;
+    margin: 50px auto 20px; /* 🔹 Reducí el margen superior */
+    border-top: 2px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección derecha: "Contáctanos" */
+.pdpderecha {
+    flex: 1; /* Ocupa una parte del espacio disponible */
+    text-align: right; /* Alinea el texto a la derecha */
+    font-size: 12px;
+}
+
+/* La cosa de arriba */
+
+.header {
+    width: 100%;
+}
+
+
+
+.nav-bar {
+    background-color: #a18a7c;
+    /* Color café */
+    /* margin-top: -194px; */
+    /* Mueve la barra más arriba */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-right: 60px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+.search-box {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+.search-input {
+    border: none;
+    background: none;
+    font-family: 'Lobster', cursive;
+    font-size: 1em;
+    color:black;
+    outline: none;
+}
+.search-input::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Color del placeholder */
+}
+
+.search-btn {
+    border: none;
+    background: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: white;
+}

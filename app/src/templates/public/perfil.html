@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario</title>
+    <link rel="stylesheet" href="../../static/CSS/styleperfil.css">
+    <link rel="stylesheet" href="../../static/CSS/PieDePagina.css">
+    <link rel="stylesheet" href="../../static/CSS/Encabezado.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+     <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+
+
+</head>
+
+
+<body>
+        <!-- Header -->
+        <header class="header position-relative w-100 overflow-hidden">
+            <div class="banner position-relative w-100 h-100">
+                <!-- Título -->
+                <h1 class="title position-absolute top-0 start-50 translate-middle-x fs-1 fw-bold font-lobster text-center text-brown bg-white bg-opacity-30 p-2 rounded d-flex align-items-center gap-2">
+                    Recetitas <span>Blog</span>
+                </h1>
+                <!-- Logo -->
+                <img src="../../static/img/logo.png" alt="Logo Recetitas" class="logo position-absolute top-0 end-0 m-2">
+            </div>
+        </header>
+    
+        <!-- Barra de navegación -->
+        <nav class="nav-bar navbar navbar-expand-lg navbar-light bg-brown py-3">
+            <div class="container-fluid">
+                <!-- Enlaces de navegación -->
+                <div class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <a class="nav-link text-dark fs-5 fw-bold me-4" href="{{url_for('inicio')}}">Inicio</a>
+                    <!-- Menú desplegable "Mi Perfil" -->
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark fs-5 fw-bold me-4" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Mi Perfil
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="{{url_for('perfil')}}">Mi Perfil</a></li>
+                            <li><a class="dropdown-item" href="Favoritos.html">Favoritos</a></li>
+                            <li><a class="dropdown-item" href="Historial.html">Historial</a></li>
+                        </ul>
+                    </div>
+                    <a class="nav-link text-dark fs-5 fw-bold me-4" href="Subir.html">Subir Receta</a>
+                    <a class="nav-link text-dark fs-5 fw-bold me-4" href="{{url_for('tienda')}}">Tienda Oficial</a>
+                </div>
+                <!-- Caja de búsqueda -->
+                <form class="d-flex search-box bg-white bg-opacity-90 p-2 rounded">
+                    <input class="search-input form-control border-0 bg-transparent font-lobster fs-6" type="text" placeholder="Hey, ¿Listo para cocinar?" aria-label="Search">
+                    <button class="search-btn btn btn-link text-dark fs-5 p-0" type="submit"> <a href="Resultados.html">🔍</a></button>
+                </form>
+            </div>
+        </nav>
+    
+    <div class="profile-container">
+        <!-- Portada -->
+        <div class="portada">
+            <img src="../../static/img/burgers.png" alt="Imagen de portada">
+            <div class="calificacion">⭐⭐⭐⭐</div>
+        </div>
+
+        <!-- Sección de Foto de Perfil y Nombre -->
+        <div class="perfil">
+            <div class="foto-perfil">
+                <img src="../../static/img/chef.png" alt="Foto de perfil">
+            </div>
+            <div class="nombre-usuario">
+                <h2>Pedrito Chef</h2>
+            </div>
+        </div>
+
+        <!-- Información del usuario -->
+        <div class="informacion">
+            <h2>Mi información</h2>
+            <h3>Soy un principiante en la cocina pero ocupo aprender para sobrevivir a la vida adulta.</h3>
+        </div>
+
+
+
+        <!-- Contenedor Principal -->
+        <div class="contenido-perfil">
+
+            <div class="separador"></div>
+            <!-- Sección de Actividad Reciente -->
+            <div class="galeria">
+                <h2>Actividad Reciente</h2>
+                <div class="imagenes">
+                    <img src="../../static/img/chilerelleno.jpeg" alt="Actividad 1">
+                    <img src="../../static/img/comidaespanola.jpg" alt="Actividad 2">
+                    <img src="../../static/img/pizza.png" alt="Actividad 3">
+                </div>
+            </div>
+
+            <!-- Sección de Mis Recetas Creadas -->
+            <div class="galeria">
+                <h2>Mis Recetas Creadas</h2>
+                <div class="imagenes">
+                    <img src="../../static/img/salmon.jpg" alt="Receta 1">
+                    <img src="../../static/img/espageto.jpg" alt="Receta 2">
+                    <img src="../../static/img/tacos.jpg" alt="Receta 3">
+                </div>
+            </div>
+
+            <!-- Botón para subir una receta -->
+            <div class="subir-receta">
+                <button>Subir una Receta</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+<footer>
+    <div class="pdpIzq">
+        <p>¿Quienes somos?</p>
+        <p>Somos un blog público de recetas</p>
+        <p>Nuestro proposito es ayudar a aprender a cocinar a los usuarios</p>
+    </div>
+
+    <div class="pdpcontactanos">
+        <p>Siguenos en redes sociales</p>
+        <div class="pdpcontenedorimagenes">
+            <div class="pdpImg">
+                <img src="../../static/img/facebook-new.png" alt="Facebook">
+            </div>
+            <div class="pdpImg">
+                <img src="../../static/img/Twitter.png" alt="Twitter">
+            </div>
+            <div class="pdpImg">
+                <img src="../../static/img/Instagram.jpg" alt="Twitter">
+            </div>
+        </div>
+    </div>
+
+    <div class="pdpderecha">
+        <p>Encuentranos en:</p>
+        <p>Rio Pantitlan 4632, Colonia Americas 25843, Méxicali, Baja California, México.</p>
+        <p>Contacto: +52 686 323 7433</p>
+        <p><a class="HipertextoFooter" href="{{url_for('contactanos')}}">Manda un mensaje a los desarrolladores</a></p>
+    </div>
+</footer>
+
+
+</html>

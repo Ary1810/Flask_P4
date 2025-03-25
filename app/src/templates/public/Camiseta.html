@@ -1,0 +1,158 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Oficial - Camiseta Oficial</title>
+
+    <link rel="stylesheet" href="../../static/CSS/PieDePagina.css">
+    <link rel="stylesheet" href="../../static/CSS/Encabezado.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../static/CSS/Favoritos.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header position-relative w-100 overflow-hidden">
+        <div class="banner position-relative w-100 h-100">
+            <!-- Título -->
+            <h1 class="title position-absolute top-0 start-50 translate-middle-x fs-1 fw-bold font-lobster text-center text-brown bg-white bg-opacity-30 p-2 rounded d-flex align-items-center gap-2">
+                Camiseta <span>oficial</span>
+            </h1>
+            <!-- Logo -->
+            <img src="../../static/img/logo.png" alt="Logo Camiseta Oficial" class="logo position-absolute top-0 end-0 m-2">
+        </div>
+    </header>
+
+    <!-- Barra de navegación -->
+    <nav class="nav-bar navbar navbar-expand-lg navbar-light bg-brown py-3">
+        <div class="container-fluid">
+            <!-- Enlaces de navegación -->
+            <div class="navbar-nav me-auto mb-2 mb-lg-0">
+                <a class="nav-link text-dark fs-5 fw-bold me-4" href="index.html">Inicio</a>
+                <!-- Menú desplegable "Mi Perfil" -->
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-dark fs-5 fw-bold me-4" href="#" id="navbarDropdown"
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Mi Perfil
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="perfil.html">Mi Perfil</a></li>
+                        <li><a class="dropdown-item" href="Favoritos.html">Favoritos</a></li>
+                        <li><a class="dropdown-item" href="Historial.html">Historial</a></li>
+                    </ul>
+                </div>
+                <a class="nav-link text-dark fs-5 fw-bold me-4" href="Subir.html">Subir Contenido</a>
+                <a class="nav-link text-dark fs-5 fw-bold me-4" href="tienda.html">Tienda Oficial</a>
+            </div>
+            <!-- Caja de búsqueda -->
+            <form class="d-flex search-box bg-white bg-opacity-90 p-2 rounded">
+                <input class="search-input form-control border-0 bg-transparent font-lobster fs-6" type="text"
+                    placeholder="Buscar producto..." aria-label="Search">
+                <button class="search-btn btn btn-link text-dark fs-5 p-0" type="submit">
+                    <a href="Resultados.html">🔍</a>
+                </button>
+            </form>
+        </div>
+    </nav>
+
+    <section class="favoritos-container">
+        <div class="previsualizacion">
+            <div class="imagen-container">
+                <button class="btn-eliminar">&#128465;</button>
+                <img src="../../static/img/Camisa.jpg" alt="Imagen de la Camiseta Oficial">
+            </div>
+            <!-- Texto descriptivo debajo de la imagen en grande -->
+            <h2>Camiseta Oficial</h2>
+            <p class="autor">Tienda Oficial</p>
+            <div class="informacion">
+                <p>
+                    Nuestra camiseta oficial es el reflejo de nuestro compromiso con la calidad y el estilo. Confeccionada en 100% algodón,
+                    ofrece un ajuste cómodo y moderno para cualquier ocasión. Su diseño exclusivo destaca por detalles únicos y colores vibrantes, perfectos para quienes buscan originalidad y confort.
+                </p>
+            </div>
+        </div>
+
+        <div class="separador"></div>
+
+        <!-- Tabla de especificaciones en lugar de imágenes -->
+        <div class="tabla-especificaciones">
+            <h2>Especificaciones de la Camiseta</h2>
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>Talla</th>
+                        <th>Colores Disponibles</th>
+                        <th>Ancho (cm)</th>
+                        <th>Largo (cm)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>S</td>
+                        <td>Blanco, Negro, Azul</td>
+                        <td>48</td>
+                        <td>70</td>
+                    </tr>
+                    <tr>
+                        <td>M</td>
+                        <td>Blanco, Negro, Azul, Rojo</td>
+                        <td>50</td>
+                        <td>72</td>
+                    </tr>
+                    <tr>
+                        <td>L</td>
+                        <td>Blanco, Negro, Azul, Rojo, Verde</td>
+                        <td>52</td>
+                        <td>74</td>
+                    </tr>
+                    <tr>
+                        <td>XL</td>
+                        <td>Blanco, Negro, Azul, Rojo, Verde</td>
+                        <td>54</td>
+                        <td>76</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</body>
+
+<footer>
+    <div class="pdpIzq">
+        <p>¿Quienes somos?</p>
+        <p>Somos la tienda oficial de nuestra marca</p>
+        <p>Nuestro propósito es ofrecer productos de calidad a nuestros clientes</p>
+    </div>
+
+    <div class="pdpcontactanos">
+        <p>Síguenos en redes sociales</p>
+        <div class="pdpcontenedorimagenes">
+            <div class="pdpImg">
+                <img src="../../static/img/facebook-new.png" alt="Facebook">
+            </div>
+            <div class="pdpImg">
+                <img src="../../static/img/Twitter.png" alt="Twitter">
+            </div>
+            <div class="pdpImg">
+                <img src="../../static/img/Instagram.jpg" alt="Instagram">
+            </div>
+        </div>
+    </div>
+
+    <div class="pdpderecha">
+        <p>Encuéntranos en:</p>
+        <p>Rio Pantitlan 4632, Colonia Américas 25843, Mexicali, Baja California, México.</p>
+        <p>Contacto: +52 686 323 7433</p>
+        <p><a class="HipertextoFooter" href="Formulario.html">Manda un mensaje a los desarrolladores</a></p>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</footer>
+
+</html>

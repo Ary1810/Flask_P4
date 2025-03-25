@@ -1,0 +1,84 @@
+/* Codigo de el Pie de Pagina */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.HipertextoFooter {
+    color: aqua;
+}
+
+footer {
+    color: white;
+    background-color: #a18a7c;
+    width: 100%;
+    /* Ocupa el 100% del ancho */
+    min-height: 100px;
+    /* Alto mínimo */
+    display: flex;
+    justify-content: space-between;
+    /* Distribuye el espacio entre los elementos */
+    align-items: center;
+    /* Centra el contenido verticalmente */
+    padding: 20px;
+    /* Espacio interno */
+    box-sizing: border-box;
+    /* Incluye el padding en el ancho y alto */
+    font-style: oblique;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Sección izquierda: "¿Quiénes somos?" */
+.pdpIzq {
+    flex: 1;
+    /* Ocupa una parte del espacio disponible */
+    text-align: left;
+    /* Alinea el texto a la izquierda */
+    font-size: 20px;
+}
+
+/* Sección central: Redes sociales */
+.pdpcontactanos {
+    font-size: 30px;
+    flex: 1;
+    /* Ocupa una parte del espacio disponible */
+    display: flex;
+    flex-direction: column;
+    /* Alinea el texto y las imágenes en columna */
+    align-items: center;
+    /* Centra el contenido horizontalmente */
+}
+
+.pdpcontenedorimagenes {
+    display: flex;
+    /* Alinea las imágenes horizontalmente */
+    gap: 10px;
+    /* Espacio entre las imágenes */
+}
+
+.pdpImg {
+    width: 60px;
+    height: 60px;
+}
+
+.pdpImg img {
+    border-radius: 25px;
+    width: 100%;
+    /* Asegura que las imágenes ocupen todo el espacio del contenedor */
+    height: 100%;
+    object-fit: cover;
+    /* Ajusta la imagen sin distorsionarla */
+}
+
+/* Sección derecha: "Contáctanos" */
+.pdpderecha {
+    flex: 1;
+    /* Ocupa una parte del espacio disponible */
+    text-align: right;
+    /* Alinea el texto a la derecha */
+    font-size: 20px;
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../static/CSS/Formulario.css">
+    <link rel="stylesheet" href="../../static/CSS/PieDePagina.css">
+    <link rel="stylesheet" href="../../static/CSS/Encabezado.css">
+     <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+    <title>Contactanos</title>
+</head>
+<body>
+
+        <!-- Header -->
+        <header class="header position-relative w-100 overflow-hidden">
+            <div class="banner position-relative w-100 h-100">
+                <!-- Título -->
+                <h1 class="title position-absolute top-0 start-50 translate-middle-x fs-1 fw-bold font-lobster text-center text-brown bg-white bg-opacity-30 p-2 rounded d-flex align-items-center gap-2">
+                    Recetitas <span>Blog</span>
+                </h1>
+                <!-- Logo -->
+                <img src="../../static/img/logo.png" alt="Logo Recetitas" class="logo position-absolute top-0 end-0 m-2">
+            </div>
+        </header>
+    
+        <!-- Barra de navegación -->
+        <nav class="nav-bar navbar navbar-expand-lg navbar-light bg-brown py-3">
+            <div class="container-fluid">
+                <!-- Enlaces de navegación -->
+                <div class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <a class="nav-link text-dark fs-5 fw-bold me-4" href="{{url_for('inicio')}}">Inicio</a>
+                    <!-- Menú desplegable "Mi Perfil" -->
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark fs-5 fw-bold me-4" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Mi Perfil
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="{{url_for('perfil')}}">Mi Perfil</a></li>
+                            <li><a class="dropdown-item" href="Favoritos.html">Favoritos</a></li>
+                            <li><a class="dropdown-item" href="Historial.html">Historial</a></li>
+                        </ul>
+                    </div>
+                    <a class="nav-link text-dark fs-5 fw-bold me-4" href="Subir.html">Subir Receta</a>
+                    <a class="nav-link text-dark fs-5 fw-bold me-4" href="{{url_for('tienda')}}">Tienda Oficial</a>
+                </div>
+                <!-- Caja de búsqueda -->
+                <form class="d-flex search-box bg-white bg-opacity-90 p-2 rounded">
+                    <input class="search-input form-control border-0 bg-transparent font-lobster fs-6" type="text" placeholder="Hey, ¿Listo para cocinar?" aria-label="Search">
+                    <button class="search-btn btn btn-link text-dark fs-5 p-0" type="submit"> <a href="Resultados.html">🔍</a></button>
+                </form>
+            </div>
+        </nav>
+    
+    
+          <div class="contact_form">
+      
+              <div class="formulario">			
+            <h1 id="titulos">Formulario de contacto</h1>
+                      <h3 id="titulos">¿Dudas? ¿Sugerencias? ¿Comentarios? Escribelas en este formulario!</h3>
+      
+      
+                          <form id="miFormulario">				
+      
+                              
+                                      <p>
+                                          <label for="nombre" class="colocar_nombre">Nombre
+                                              <span class="obligatorio">*</span>
+                                          </label>
+                                              <input type="text" name="introducir_nombre" id="nombre" placeholder="Escribe tu nombre">
+                                              <span class="mensaje-error" id="error-nombre"></span> <!-- Mensaje de error -->
+                                      </p>
+                                  
+                                      <p>
+                                          <label for="email" class="colocar_email">Email
+                                              <span class="obligatorio">*</span>
+                                          </label>
+                                              <input type="email" name="introducir_email" id="email"  placeholder="Escribe tu Email">
+                                              <span class="mensaje-error" id="error-email"></span> <!-- Mensaje de error -->
+                                      </p>
+                              
+                                      <p>
+                                          <label for="telefone" class="colocar_telefono">Teléfono
+                                          </label>
+                                              <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                                              <span class="mensaje-error" id="error-telefono"></span> <!-- Mensaje de error -->
+                                      </p>		
+                                  
+                                      <p>
+                                          <label for="website" class="colocar_website">Sitio web
+                                          </label>
+                                              <input  name="introducir_website" id="website" placeholder="Escribe la URL de tu web">
+                                              <span class="mensaje-error" id="error-website"></span> <!-- Mensaje de error -->
+                                      </p>		
+                                  
+                                      <p>
+                                          <label for="asunto" class="colocar_asunto">Asunto
+                                              <span class="obligatorio">*</span>
+                                          </label>
+                                              <input type="text" name="introducir_asunto" id="asunto" placeholder="Escribe un asunto">
+                                              <span class="mensaje-error" id="error-asunto"></span> <!-- Mensaje de error -->
+                                      </p>		
+                                  
+                                      <p>
+                                          <label for="mensaje" class="colocar_mensaje">Mensaje
+                                              <span class="obligatorio">*</span>
+                                          </label>                     
+                                               <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje"  placeholder="Deja aquí tu comentario..."></textarea>
+                                               <span class="mensaje-error" id="error-mensaje"></span> <!-- Mensaje de error --> 
+                                         </p>	  								
+                                  
+                                      <button name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+      
+                                      <p class="aviso">
+                                          <span class="obligatorio"> * </span>Los campos son obligatorios.
+                                      </p>					
+                              
+                          </form>
+              </div>	
+          </div>
+
+ <!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Script de validacion -->
+<script src="../JavaScript/validacion-Contactanos.js"></script>
+
+</body>
+<footer>
+    <div class="pdpIzq">
+        <p>¿Quienes somos?</p>
+        <p>Somos un blog público de recetas</p>
+        <p>Nuestro proposito es ayudar a aprender a cocinar a los usuarios</p>
+    </div>
+
+    <div class="pdpcontactanos">
+        <p>Siguenos en redes sociales</p>
+        <div class="pdpcontenedorimagenes">
+            <div class="pdpImg">
+                <img src="../../static/img/facebook-new.png" alt="Facebook">
+            </div>
+            <div class="pdpImg">
+                <img src="../../static/img/Twitter.png" alt="Twitter">
+            </div>
+            <div class="pdpImg">
+                <img src="../../static/img/Instagram.jpg" alt="Twitter">
+            </div>
+        </div>
+    </div>
+
+    <div class="pdpderecha">
+        <p>Encuentranos en:</p>
+        <p>Rio Pantitlan 4632, Colonia Americas 25843, Méxicali, Baja California, México.</p>
+        <p>Contacto: +52 686 323 7433</p>
+        <p><a class = "HipertextoFooter" href="{{url_for('contactanos')}}">Manda un mensaje a los desarrolladores</a></p>
+    </div>
+</footer>
+
+
+</html>

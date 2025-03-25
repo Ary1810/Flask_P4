@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetitas - Búsqueda</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../static/CSS/Encabezado.css">
+    <link rel="stylesheet" href="../../static/CSS/galeria.css">
+    <link rel="stylesheet" href="../../static/CSS/PieDePagina.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Slab:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body class="fondogaleria">
+    <!-- Header -->
+    <header class="header position-relative w-100 overflow-hidden" style="height: 300px;">
+        <div class="banner position-relative w-100 h-100">
+            <!-- Título -->
+            <h1
+                class="title position-absolute top-0 start-50 translate-middle-x fs-1 fw-bold font-lobster text-center text-brown bg-white bg-opacity-30 p-2 rounded d-flex align-items-center gap-2">
+                Recetitas <span>Blog</span>
+            </h1>
+            <!-- Logo -->
+            <img src="../Imagenes/logo.png" alt="Logo Recetitas" class="logo position-absolute top-0 end-0 m-2"
+                style="width: 60px; opacity: 0.8; border-radius: 20%; background: rgba(255, 255, 255, 0.5); padding: 5px;">
+        </div>
+    </header>
+
+    <!-- Barra de navegación -->
+    <nav class="nav-bar navbar navbar-expand-lg navbar-light bg-brown py-3">
+        <div class="container-fluid">
+            <!-- Enlaces de navegación -->
+            <div class="navbar-nav me-auto mb-2 mb-lg-0">
+                <a class="nav-link text-dark fs-5 fw-bold me-4" href="index.html">Inicio</a>
+                <!-- Menú desplegable "Mi Perfil" -->
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-dark fs-5 fw-bold me-4" href="#" id="navbarDropdown"
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Mi Perfil
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="perfil.html">Mi Perfil</a></li>
+                        <li><a class="dropdown-item" href="Favoritos.html">Favoritos</a></li>
+                        <li><a class="dropdown-item" href="Historial.html">Historial</a></li>
+                    </ul>
+                </div>
+                <a class="nav-link text-dark fs-5 fw-bold me-4" href="Subir.html">Subir Receta</a>
+                <a class="nav-link text-dark fs-5 fw-bold me-4" href="tienda.html">Tienda Oficial</a>
+            </div>
+            <!-- Caja de búsqueda -->
+            <form class="d-flex search-box bg-white bg-opacity-90 p-2 rounded">
+                <input class="search-input form-control border-0 bg-transparent font-lobster fs-6" type="text"
+                    placeholder="Hey, ¿Listo para cocinar?" aria-label="Search">
+                <button class="search-btn btn btn-link text-dark fs-5 p-0" type="submit"> <a
+                        href="Resultados.html">🔍</a></button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+
+    <!-- Título de la página -->
+    <section class="search-results">
+        <h1>Resultado para tus búsquedas</h1>
+        <div class="recipes-container">
+            <div class="recipe-card">
+               <a href="Recetas.html"><img src="../../static/img/filete.jpg" alt="Filete Asado"></a> 
+                <div class="recipe-info">
+                    <h3>Filete Asado</h3>
+                    <p>Receta deliciosa de filete asado.</p>
+                </div>
+            </div>
+            <div class="recipe-card">
+                <img src="../../static/img/lasaña.jpg" alt="Lasaña Clásica">
+                <div class="recipe-info">
+                    <h3>Lasaña Clásica</h3>
+                    <p>Receta de lasaña tradicional.</p>
+                </div>
+            </div>
+            <div class="recipe-card">
+                <img src="../../static/img/ramen.jpg" alt="Ramen Clásico">
+                <div class="recipe-info">
+                    <h3>Ramen Clásico</h3>
+                    <p>Receta auténtica de ramen.</p>
+                </div>
+            </div>
+            <div class="recipe-card">
+                <img src="../../static/img/taco.jpg" alt="Tacos Mexicanos">
+                <div class="recipe-info">
+                    <h3>Tacos Mexicanos</h3>
+                    <p>Receta de tacos con carne.</p>
+                </div>
+            </div>
+
+            <div class="recipe-card">
+                <img src="../../static/img/frituras2.jpg" alt="Filete Asado">
+                <div class="recipe-info">
+                    <h3>Receta de frituras</h3>
+                    <p>Receta deliciosa de frituras asado.</p>
+                </div>
+            </div>
+            <div class="recipe-card">
+                <img src="../../static/img/bebidaD.jpg" alt="Lasaña Clásica">
+                <div class="recipe-info">
+                    <h3>Bebidas</h3>
+                    <p>Receta para bebidas</p>
+                </div>
+            </div>
+            <div class="recipe-card">
+                <img src="../../static/img/bebidaT.jpg" alt="Ramen Clásico">
+                <div class="recipe-info">
+                    <h3>Bebida fria</h3>
+                    <p>Receta para una bebida fria chocolate.</p>
+                </div>
+            </div>
+            <div class="recipe-card">
+                <img src="../../static/img/chilerelleno.jpeg" alt="Tacos Mexicanos">
+                <div class="recipe-info">
+                    <h3>Chiles rellenos Mexicanos</h3>
+                    <p>Receta de chiles rellenos con carne.</p>
+                </div>
+            </div>
+            <div class="recipe-card">
+                <img src="../../static/img/postre3.jpg" alt="Lasaña Clásica">
+                <div class="recipe-info">
+                    <h3>Postre de chocolate</h3>
+                    <p>Receta para postre de chocolate horneado.</p>
+                </div>
+            </div>
+            <div class="recipe-card">
+                <img src="../../static/img/postre4.jpg" alt="Ramen Clásico">
+                <div class="recipe-info">
+                    <h3>Postre dulce</h3>
+                    <p>Receta postre frio de temporada.</p>
+                </div>
+            </div>
+            <div class="recipe-card">
+                <img src="../../static/img/desayuno3.jpg" alt="Tacos Mexicanos">
+                <div class="recipe-info">
+                    <h3>Tacos Mexicanos</h3>
+                    <p>Receta de tacos con carne.</p>
+                </div>
+            </div>
+
+            <div class="recipe-card">
+                <img src="../../static/img/desayuno5.jpg" alt="Filete Asado">
+                <div class="recipe-info">
+                    <h3>Avenas</h3>
+                    <p>Receta para desayuno de avenas.</p>
+                </div>
+            </div>
+            <div class="recipe-card">
+                <img src="../../static/img/desayuno2.jpg" alt="Lasaña Clásica">
+                <div class="recipe-info">
+                    <h3>Desayuno nutritivo</h3>
+                    <p>Receta para desayuno vegano con frutas.</p>
+                </div>
+            </div>
+            <div class="recipe-card">
+                <img src="../../static/img/ramen.jpg" alt="Ramen Clásico">
+                <div class="recipe-info">
+                    <h3>Ramen Clásico</h3>
+                    <p>Receta auténtica de ramen.</p>
+                </div>
+            </div>
+            <div class="recipe-card">
+                <img src="../../static/img/taco.jpg" alt="Tacos Mexicanos">
+                <div class="recipe-info">
+                    <h3>Tacos Mexicanos</h3>
+                    <p>Receta de tacos con carne.</p>
+                </div>
+            </div>
+            <!-- Agrega más recetas aquí -->
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="pdpIzq">
+            <p>¿Quiénes somos?</p>
+            <p>Somos un blog público de recetas</p>
+            <p>Nuestro propósito es ayudar a aprender a cocinar a los usuarios</p>
+        </div>
+        <div class="pdpcontactanos">
+            <p>Síguenos en redes sociales</p>
+            <div class="pdpcontenedorimagenes">
+                <div class="pdpImg">
+                    <img src="../../static/img/facebook-new.png" alt="Facebook">
+                </div>
+                <div class="pdpImg">
+                    <img src="../../static/img/Twitter.png" alt="Twitter">
+                </div>
+                <div class="pdpImg">
+                    <img src="../../static/img/Instagram.jpg" alt="Instagram">
+                </div>
+            </div>
+        </div>
+        <div class="pdpderecha">
+            <p>Encuéntranos en:</p>
+            <p>Río Pantitlán 4632, Colonia Américas 25843, Méxicali, Baja California, México.</p>
+            <p>Contacto: +52 686 323 7433</p>
+            <p><a class="HipertextoFooter" href="Formulario.html">Manda un mensaje a los desarrolladores</a></p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

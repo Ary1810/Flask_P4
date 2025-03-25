@@ -1,0 +1,251 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.recipe-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 40px;
+    /* Para separar de pie de página */
+}
+
+.recipe-left {
+    width: 45%;
+}
+
+.recipe-right {
+    width: 50%;
+    padding-left: 20px;
+}
+
+h2,
+h3 {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #555;
+}
+
+.titulo {
+
+    font-family: 'Lobster', cursive;
+    color: #800020;
+    /* Color guinda */
+    text-align: 20px;
+    /* Centrado a la derecha */
+    font-size: 2.5rem;
+    /* Tamaño de fuente */
+    margin-top: 40px;
+    /* Margen superior */
+    font-weight: bold;
+    /* Hacer el texto más grueso */
+
+}
+
+.titulos {
+
+    font-family: 'Lobster', cursive;
+    color: #800020;
+    /* Color guinda */
+    text-align: 20px;
+    /* Centrado a la derecha */
+    font-size: 1.5rem;
+    /* Tamaño de fuente */
+    margin-top: 40px;
+    /* Margen superior */
+    font-weight: bold;
+    /* Hacer el texto más grueso */
+
+}
+
+/* Imagen principal de la receta */
+.recipe-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para la valoración */
+.rating {
+    margin-bottom: 20px;
+}
+
+.rating h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+/* Estilo para los ingredientes */
+.ingredients ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.ingredients li {
+    font-size: 1.1em;
+    margin-bottom: 8px;
+}
+
+/* Estilo para los tips */
+.tips p {
+    font-size: 1em;
+    color: #777;
+}
+
+/* Estilo para la línea de separación */
+hr.separator {
+    border: 0;
+    border-top: 2px solid #b8955b;
+    margin: 20px 0;
+}
+
+/* Alinear los Tips y las Imágenes de Apoyo a la izquierda */
+.tips,
+.additional-images {
+    width: 70%;
+    text-align: left;
+    margin-left: 0;
+    /* Asegura que esté alineado a la izquierda */
+}
+
+.tips h3,
+.additional-images h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.tips p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Estilo para las imágenes adicionales */
+.additional-images {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    /* Asegura que las imágenes se ajusten en pantallas pequeñas */
+}
+
+.additional-images img {
+    width: 160%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+/* Asegurarse de que las imágenes no se desborden */
+.additional-images img:last-child {
+    margin-right: 0;
+}
+
+/* Para la preparación */
+.preparation p {
+    font-size: 1.1em;
+    color: #444;
+}
+
+/* Media Query para hacer el diseño más responsivo */
+@media (max-width: 768px) {
+    .recipe-container {
+        flex-direction: column;
+    }
+
+    .recipe-left,
+    .recipe-right {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .additional-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .additional-images img {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Estilo para el video y el botón favoritos */
+.Video {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.btn-favoritos {
+    background-color: #A3B18A;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-favoritos:hover {
+    background-color: #8a9a7a;
+}
+
+/* Preparación */
+.Preparacion {
+    font-size: 1.5em;
+    color: white;
+    margin: 10px;
+    padding: 20px;
+    background-color: #A3B18A;
+    border-radius: 8px;
+}
+
+/* Estilo para los ingredientes */
+.Ingredientes {
+    font-size: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 10px;
+}
+
+.ListaIngredientes {
+    color: white;
+    width: 40%;
+    background-color: #A3B18A;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.ImgIngredientes {
+    width: 50%;
+    background-color: #A3B18A;
+    padding: 10px;
+    border-radius: 10%;
+}
+
+/* Asegurar el fondo blanco en el cuerpo */
+body {
+    background-color: white;
+}

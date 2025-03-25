@@ -1,0 +1,123 @@
+.contact_form {
+    max-width: 460px; /* Cambia width fijo a max-width */
+    width: 90%; /* Ocupa el 90% del ancho en pantallas pequeñas */
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #9D806F;
+    padding-left: 30px;
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+body {
+    background-color: white;
+}
+
+input {
+    background-color: #fbfbfb;
+    width: 100%; /* Cambia el ancho fijo a relativo */
+    max-width: 408px; /* Limita el ancho máximo */
+    height: 40px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #5E3119;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+textarea {
+    background-color: #fbfbfb;
+    width: 100%; /* Cambia el ancho fijo a relativo */
+    max-width: 405px; /* Limita el ancho máximo */
+    height: 150px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #5E3119;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+label {
+    display: block;
+    float: center;
+}
+
+
+button {
+    height: 45px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    background-color: #5E3119;
+    border-color: #5E3119;
+    border-style: solid;
+    border-radius: 10px;
+    width: 100%; /* Cambia el ancho fijo a relativo */
+    max-width: 420px; /* Limita el ancho máximo */
+    cursor: pointer;
+}
+
+button p {
+    color: #fff;
+}
+
+span {
+    color: #ab4493;
+}
+
+.aviso {
+    font-size: 13px;
+    color: #0e0e0e;
+}
+
+h1 {
+    font-size: 2.5em; /* Usa unidades relativas */
+    text-align: left;
+    padding-bottom: 20px;
+    color: #ab4493;
+}
+
+h3 {
+    font-size: 1.2em; /* Usa unidades relativas */
+    padding-bottom: 30px;
+    color: #0e0e0e;
+}
+
+.mensaje-error {
+    color: red; 
+    font-size: 0.9em; 
+    display: block; 
+    margin-top: 5px; 
+}
+
+/* Media Queries para ajustar el texto en pantallas pequeñas */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3em; /* Reduce el tamaño de la fuente en pantallas pequeñas */
+    }
+
+    h3 {
+        font-size: 1.4em; /* Reduce el tamaño de la fuente en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 3.5em; /* Reduce aún más el tamaño de la fuente en pantallas muy pequeñas */
+    }
+
+    h3 {
+        font-size: 1.6em; /* Reduce aún más el tamaño de la fuente en pantallas muy pequeñas */
+    }
+}

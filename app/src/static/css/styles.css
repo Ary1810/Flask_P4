@@ -1,0 +1,379 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+
+.title {
+    position: absolute;
+    top: 1%;
+    left: 39%;
+    transform: translateY(-50%);
+    font-size: 3.3em;
+    font-family: 'Lobster', cursive;
+    color: #9B8070;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 3px 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.title span {
+    color: #9B8070;
+    position: relative;
+}
+
+
+.hero-section {
+    position: relative;
+    width: 99%;
+    height: 370px;
+    background-image: url('../img/tusrecetas.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 0.55%;
+    /* Agrega margen superior */
+    overflow: hidden;
+}
+
+/* Capa oscura */
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    /* Ajusta el valor para más oscuridad */
+    z-index: 1;
+}
+
+.hero-content {
+    max-width: 600px;
+    color: white;
+    position: relative;
+    z-index: 2;
+    padding-top: 170px;
+    /* Ajusta el espacio superior */
+}
+
+.hero-subtitle {
+    font-family: 'Lobster', cursive;
+    color: #C23D6F;
+    font-size: 2em;
+    margin-bottom: 90px;
+    /* Reduce espacio debajo */
+}
+
+.hero-title {
+    font-family: 'Roboto Slab', serif;
+    font-size: 4em;
+    font-weight: bold;
+    line-height: 1;
+    margin-top: 7px;
+    /* Reduce espacio arriba */
+}
+
+.hero-logo {
+    position: absolute;
+    bottom: 290px;
+    right: 410px;
+    width: 70px;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.recetas-rapidas {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.recetas-rapidas h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.recetas-rapidas h2::before,
+.recetas-rapidas h2::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: black;
+    position: absolute;
+    top: 50%;
+}
+
+.recetas-rapidas h2::before {
+    left: 5%;
+}
+
+.recetas-rapidas h2::after {
+    right: 5%;
+}
+
+.recetas-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.receta {
+    position: relative;
+    width: 280px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.receta img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.receta:hover img {
+    transform: scale(1.05);
+}
+
+.receta-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 0 0 15px 15px;
+}
+
+.receta-info h3 {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.receta-info hr {
+    width: 50%;
+    border: 1px solid white;
+    margin: 8px auto;
+}
+
+.btn-receta {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border-bottom: 1px solid white;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.btn-receta:hover {
+    color: #FFD700;
+    border-bottom: 1px solid #FFD700;
+}
+
+.mejor-calificados {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.mejor-calificados h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.calificados-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.calificado {
+    width: 220px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.calificado:hover {
+    transform: scale(1.05);
+}
+
+.calificado-img {
+    position: relative;
+    width: 100%;
+    height: 150px;
+}
+
+.calificado-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.dificultad {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.facil {
+    background: #4CAF50;
+    /* Verde */
+}
+
+.intermedio {
+    background: #FFC107;
+    /* Amarillo */
+}
+
+.dificil {
+    background: #D32F2F;
+    /* Rojo */
+}
+
+.calificado-info {
+    padding: 10px;
+    text-align: center;
+}
+
+.estrellas {
+    font-size: 1.2em;
+    color: gold;
+    margin-bottom: 5px;
+}
+
+.titulo-receta {
+    font-family: 'Lobster', cursive;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+.titulo-receta:hover {
+    color: #D43F00;
+}
+
+p {
+    font-size: 0.9em;
+    margin: 5px 0;
+}
+
+.autor {
+    color: #4C74A6;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.autor:hover {
+    text-decoration: underline;
+}
+
+.rating {
+    font-weight: bold;
+    font-size: 1em;
+    color: #333;
+}
+
+.categorias {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.categorias h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.menu-categorias {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.categoria {
+    background: transparent;
+    border: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.categoria.active {
+    color: #D43F00;
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+.categoria:hover {
+    color: #9B8070;
+}
+
+/* GRID DE RECETAS */
+.contenedor-recetas {
+    display: flex;
+    justify-content: center;
+}
+
+.grid-recetas {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    width: 80%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.grid-recetas img {
+    width: 100%;
+    /* Hace que la imagen ocupe todo el espacio disponible */
+    height: 180px;
+    /* Define una altura fija para todas */
+    object-fit: cover;
+    /* Evita distorsión y mantiene la proporción */
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.grid-recetas img:hover {
+    transform: scale(1.05);
+}
+
+
+/* OCULTAR OTRAS CATEGORÍAS */
+.hidden {
+    display: none;
+}
